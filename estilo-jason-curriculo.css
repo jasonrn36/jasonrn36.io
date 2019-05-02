@@ -1,0 +1,95 @@
+.interface{
+			/* width significa largura*/
+			width: 500px;
+			padding: 70px 90px;
+			background-color: #ffffff;
+		}
+
+*{
+			margin: 0;
+			padding: 0;
+		}
+
+body{
+			background-color: #dcdcdc;
+			margin: 50px 100px;
+		}
+
+input#check{
+			display: none;
+		}
+
+label#icone{
+			/*margin é a posição do icone na tela 10px é cima, 3px é esquerda  */
+			margin: -60px -90px;
+			cursor: pointer;
+			padding: 15px;
+			position: absolute;
+			z-index: 1;
+		}
+
+.barra {
+			background-color: #333;
+			height: 100%;
+			width: 300px;
+			position: absolute;
+			transition: all .2s linear;
+			left: -300px;
+		}
+
+ul{
+			width: 100%;
+			position: absolute;
+			top: 60px;
+			list-style: none;
+			text-transform: uppercase;
+		}
+
+ul a{
+			text-decoration: none;
+		}
+
+.link{
+			background-color: #494950;
+			padding: 20px;
+			font-family: Arial, Verdana;
+			font-size: 12pt;
+			transition: all .2s linear;
+			color: #f4f4f9;
+			border-bottom: 2px solid #222;
+			opacity: 0;
+			margin-top: 200px;
+		}
+
+.link:hover{
+			background-color: #050542;
+}
+
+#check:checked ~ .barra{
+			transform: translateX(300px);
+
+
+}
+
+#check:checked ~ .barra ul a .link{
+	opacity: 1;
+	margin-top: 0;
+	transition-delay: .2s;
+}
+
+h1 {
+	font-size: 22pt;
+	font-family: Arial, Verdana;
+	text-shadow: 1px 1px 3px #505050;
+}
+
+p {
+	font-size: 12pt;
+	font-family: Arial,Verdana;
+	text-align: justify;
+	text-indent: 40px;
+	letter-spacing: .5px;
+	word-spacing: 2px;
+			line-height: 1.5;
+
+		}
